@@ -1,20 +1,30 @@
 #demo
     .box
         background-color: #427197
+        border: 2px solid #036b37
         width: 180px
         height: 180px
-        padding: 50px 50px
-        margin: 40px 0
-        &:hover
-            padding: 20px
+        padding: 50px
         .minibox
             background-color: #063970
             color: #ffff
+            font-weight: 600
+            font-size: 17px
             width: 80px
             height: 80px
             padding: 30px 30px
-            transition: 1s
+            transition: 2s
             &:hover
                 width: 140px
                 height: 140px
                 padding: 60px 60px
+                margin: -30px
+   
+    @media (max-width: 750px)
+        .col-md-12
+            flex-direction: column
+            align-items: center
+    @media ( min-width: 751px)
+        .col-md-12
+            justify-content: space-evenly
+                
